@@ -1,11 +1,10 @@
 import Header from "./Header/page";
-import Hero from "./Hero/page";
-
+import Landingpage from "./Landingpage/page";
 export default function Home() {
   return (
     <div>
       <Header />
-      <Hero />
+      <Landingpage />
     </div>
   );
 }
