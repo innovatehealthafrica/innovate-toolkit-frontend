@@ -1,4 +1,4 @@
-import Header from "./Header/page";
+import Header from "./header/page";
 import Landingpage from "./Landingpage/page";
 export default function Home() {
   return (

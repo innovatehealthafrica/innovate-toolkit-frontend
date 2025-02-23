@@ -4,25 +4,25 @@ import img1 from "../../../public/Globe.png";
 import img2 from "../../../public/Checklist.png";
 import img3 from "../../../public/money.png";
 
-
-
 export default function Hero() {
   const data = [
     {
-    img: img1,
-    title: "Designed for African Innovators",
-    comments:
-      "Represents Africa-centric solutions and tailored regional insights.",
+      img: img1,
+      title: "Designed for African Innovators",
+      comments:
+        "Represents Africa-centric solutions and tailored regional insights.",
     },
     {
       img: img2,
-    title: "Structured & Actionable",
-    comments:"Symbolizes a clear, guided approach with step-by-step frameworks.",
+      title: "Structured & Actionable",
+      comments:
+        "Symbolizes a clear, guided approach with step-by-step frameworks.",
     },
     {
       img: img3,
-    title: " Funding & Growth Opportunities",
-    comments:"Represents funding sources, financial strategies, and investor support.",
+      title: " Funding & Growth Opportunities",
+      comments:
+        "Represents funding sources, financial strategies, and investor support.",
     },
   ];
   return (
@@ -130,24 +130,25 @@ export default function Hero() {
       </div>
       <div className="flex items-center justify-center flex-col md:flex-row gap-2 sm:gap-4 mt-12">
         {data.map((item, index) => (
-          <div key={index} className="bg-gradient-to-b from-[#FBE8D0] to-[#FFFFFF] w-72 h-60 rounded-md p-4 mt-4 sm:p-4 sm:mt-20 shadow-md">
+          <div
+            key={index}
+            className="bg-gradient-to-b from-[#FBE8D0] to-[#FFFFFF] w-72 h-60 rounded-md p-4 mt-4 sm:p-4 sm:mt-20 shadow-md"
+          >
             <div className="flex items-center justify-center flex-col space-x-2 sm:space-x-6">
-                <Image
-                  src={item.img}
-                  alt="Africa with innovation icons"
-                  width={50}
-                  height={50}
-                />
+              <Image
+                src={item.img}
+                alt="Africa with innovation icons"
+                width={50}
+                height={50}
+              />
               <div>
                 <h2 className="text-lg text-center">{item.title}</h2>
                 <p className="text-gray-600 text-center">{item.comments}</p>
               </div>
             </div>
           </div>
-        )
-      )}
+        ))}
       </div>
     </section>
   );
 }
-
