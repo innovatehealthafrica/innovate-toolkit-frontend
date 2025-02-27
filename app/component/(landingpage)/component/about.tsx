@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import img1 from "../../public/Idea.png";
-import img2 from "../../public/Confusion.png";
-import img3 from "../../public/Mind Map.png";
-import img4 from "../../public/smileyman.png";
+import img1 from "../../../../public/Idea.png"
+import img2 from "../../../../public/Confusion.png";
+import img3 from "../../../../public/Mind Map.png";
+import img4 from "../../../../public/smileyman.png";
 import { CircleCheck } from "lucide-react";
 
 export default function About() {
@@ -22,8 +22,8 @@ export default function About() {
     },
   ];
   return (
-    <section className="text-white">
-      <div className="max-w-screen-2xl mx-auto bg-[#7A955A] pb-8 h-auto">
+    <section id="about-us" className="text-white">
+      <div className="max-w-screen-2xl mx-auto bg-[#7A955A] pb-8 h-auto scroll-smooth">
         {/* <div className="relative h-full w-full bg-slate-950">
           <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
         </div> */}

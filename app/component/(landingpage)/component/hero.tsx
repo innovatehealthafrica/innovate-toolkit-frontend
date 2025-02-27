@@ -1,9 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import img1 from "../../../public/Globe.png";
-import img2 from "../../../public/Checklist.png";
-import img3 from "../../../public/money.png";
-
+import img1 from "../../../../public/Globe.png";
+import img2 from "../../../../public/Checklist.png";
+import img3 from "../../../../public/money.png"
 export default function Hero() {
   const data = [
     {

@@ -5,7 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import img5 from "../../../public/ideas for PMs.png"
+import img5 from "../../../../public/ideas for PMs.png"
 import Image from "next/image";
 
 export default function Faq() {
