@@ -31,7 +31,7 @@ export default function Footer() {
         <div className="sm:flex justify-between items-center gap-5 sm:gap-0  px-6 sm:px-16 mb-3">
           <div className="text-2xl font-bold">Logo</div>
           <div className="flex items-center">
-            <ul className="flex flex-col sm:flex-row items-baseline justify-start">
+            <ul className="flex flex-col sm:flex-row sm:gap-3 items-baseline justify-start">
               {navLinks.map((item) => (
                 <Link key={item.path} href={item.path}>
                   <li
@@ -49,7 +49,7 @@ export default function Footer() {
           </div>
         </div>
         <hr />
-        <div className="flex justify-between items-center px-6 sm:px-16">
+        <div className="flex justify-between items-center px-6 sm:px-16 ">
           <p>&#xa9;2025 innovation toolkit africa</p>
           <div className="flex gap-3">
             {socialConnect.map((item) =>(<a href={item.path} target="_blank" rel="noopener noreferrer" key={item.name} >

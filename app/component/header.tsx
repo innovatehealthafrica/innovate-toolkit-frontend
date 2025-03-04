@@ -10,12 +10,17 @@ export default function Header() {
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
+  if (pathname === "/component/module") {
+    return null;
+  }
+
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About Us", path: "#about-us" },
-    { name: "Module", path: "/module" },
-    { name: "Innovation Sandbox", path: "/innovation-sandbox" },
-    { name: "Community", path: "/community" },
+    { name: "Module", path: "/component/module" },
+    { name: "Innovation Sandbox", path: "/component/innovation-sandbox" },
+    { name: "Community", path: "/component/community" },
+    { name: "Blog", path: "/component/blog" },
   ];
 
   return (
@@ -35,9 +40,16 @@ export default function Header() {
                 </li>
               </Link>
             ))}
+            {pathname.includes("/component/blog") && (
+              <Link href="/subscribe">
+                <button className="border border-black px-4 py-1 ml-5 mr-16 rounded-full bg-[#FFFFFF] hover:bg-gray-100 transition">
+                  Subscribe
+                </button>
+              </Link>
+            )}
           </ul>
           <Link href="/signup">
-            <button className="border border-black px-4 py-1 ml-5 mr-16 rounded-full bg-[#FFFFFF] hover:bg-gray-100 transition">
+            <button className="border border-black w-24 px-4 py-1 ml-5 mr-16 rounded-full bg-[#FFFFFF] hover:bg-gray-100 transition">
               Sign up
             </button>
           </Link>
