@@ -13,6 +13,9 @@ export default function Header() {
   if (pathname === "/component/module") {
     return null;
   }
+  if (pathname === "/component/community") {
+    return null;
+  }
 
   const navLinks = [
     { name: "Home", path: "/" },
@@ -24,7 +27,7 @@ export default function Header() {
   ];
 
   return (
-    <nav className="bg-gradient-to-r from-[#EDF9F2] to-[#FFF8EF] p-4">
+    <nav className="bg-transparent p-4">
       <div className="container mx-auto flex flex-col md:flex-row justify-evenly  max-w-screen-2xl">
         {/* Desktop Navigation */}
         <div className="hidden sm:flex">
