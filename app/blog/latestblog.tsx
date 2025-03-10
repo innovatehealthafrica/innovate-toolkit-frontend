@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import img1 from "../../../public/man-using-vr-glasses 1.png";
-import img2 from "../../../public/man-using-vr-glasses 2.png";
-import img3 from "../../../public/man-using-vr-glasses 3.png";
-import img4 from "../../../public/man-using-vr-glasses 4.png";
+import img1 from "@/public/man-using-vr-glasses 1.png";
+import img2 from "@/public/man-using-vr-glasses 2.png";
+import img3 from "@/public/man-using-vr-glasses 3.png";
+import img4 from "@/public/man-using-vr-glasses 4.png";
 import Image from "next/image";
 
 export default function LatestBlog() {
@@ -180,7 +180,9 @@ export default function LatestBlog() {
               <div className="flex flex-col justify-start mt-2">
                 <span className="text-gray-400">Author: {post.author}</span>
                 <div className="flex justify-between">
-                <time dateTime={post.date} className="text-gray-400">{post.date}</time>
+                  <time dateTime={post.date} className="text-gray-400">
+                    {post.date}
+                  </time>
                   <span className="text-gray-400 ml-2">{post.time}</span>
                 </div>
               </div>

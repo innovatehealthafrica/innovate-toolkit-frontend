@@ -3,18 +3,41 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import LinkedIn from "../../public/linkedin.png";
-import Instagram from "../../public/instagram.png";
-import X from "../../public/X.png";
-import Youtube from "../../public/youtube.png"; 
-
+import LinkedIn from "@/public/linkedin.png";
+import Instagram from "@/public/instagram.png";
+import X from "@/public/X.png";
+import Youtube from "@/public/youtube.png";
 
 const socialConnect = [
-  { name: "Youtube", icon: Youtube, path: "https://innovatehealth.africa/", width: 80, height: 60 },
-  { name: "LinkedIn", icon: LinkedIn, path: "https://www.linkedin.com/company/innovatehealth-africa/", width: 90, height: 60},
-  { name: "X", icon: X, path: "https://innovatehealth.africa/", width:52, height: 70 },
-  { name: "Instagram", icon: Instagram, path: "https://innovatehealth.africa/", width: 54, height: 80 },
-] 
+  {
+    name: "Youtube",
+    icon: Youtube,
+    path: "https://innovatehealth.africa/",
+    width: 80,
+    height: 60,
+  },
+  {
+    name: "LinkedIn",
+    icon: LinkedIn,
+    path: "https://www.linkedin.com/company/innovatehealth-africa/",
+    width: 90,
+    height: 60,
+  },
+  {
+    name: "X",
+    icon: X,
+    path: "https://innovatehealth.africa/",
+    width: 52,
+    height: 70,
+  },
+  {
+    name: "Instagram",
+    icon: Instagram,
+    path: "https://innovatehealth.africa/",
+    width: 54,
+    height: 80,
+  },
+];
 
 export default function Footer() {
   const pathname = usePathname();
@@ -52,10 +75,22 @@ export default function Footer() {
         <div className="flex justify-between items-center px-6 sm:px-16 ">
           <p>&#xa9;2025 innovation toolkit africa</p>
           <div className="flex gap-3">
-            {socialConnect.map((item) =>(<a href={item.path} target="_blank" rel="noopener noreferrer" key={item.name} >
-             <Image src={item.icon} alt={item.name} width={item.width} 
-             height={item.height} className="w-8 h-8" />
-             </a>))}
+            {socialConnect.map((item) => (
+              <a
+                href={item.path}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={item.name}
+              >
+                <Image
+                  src={item.icon}
+                  alt={item.name}
+                  width={item.width}
+                  height={item.height}
+                  className="w-8 h-8"
+                />
+              </a>
+            ))}
           </div>
         </div>
       </div>

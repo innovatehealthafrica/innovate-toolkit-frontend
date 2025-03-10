@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import img1 from "../../../../public/Idea.png"
-import img2 from "../../../../public/Confusion.png";
-import img3 from "../../../../public/Mind Map.png";
-import img4 from "../../../../public/smileyman.png";
+import img1 from "@/public/Idea.png";
+import img2 from "@/public/Confusion.png";
+import img3 from "@/public/Mind Map.png";
+import img4 from "@/public/smileyman.png";
 import { CircleCheck } from "lucide-react";
 
 export default function About() {
@@ -55,49 +55,55 @@ export default function About() {
             </div>
           ))}
         </div>
-        <hr className="border-[#3250284A] w-[33rem] m-3 h-1 mx-auto bg-[#3250284A] border-0 rounded-sm md:my-10 dark:bg-[#3250284A]"/>
+        <hr className="border-[#3250284A] w-[33rem] m-3 h-1 mx-auto bg-[#3250284A] border-0 rounded-sm md:my-10 dark:bg-[#3250284A]" />
         <div className="flex flex-col sm:flex-row mx-auto px-16 gap-10">
-          <Image src={img4} alt='A smileyman picture' width={503} height={607} className="w-full h-72 sm:w-2/5 sm:h-[26rem]"/>
+          <Image
+            src={img4}
+            alt="A smileyman picture"
+            width={503}
+            height={607}
+            className="w-full h-72 sm:w-2/5 sm:h-[26rem]"
+          />
           <div className="flex-1 px-4">
-            <h2 className="text-xl font-bold">Join the Healthcare Innovators Community</h2>
+            <h2 className="text-xl font-bold">
+              Join the Healthcare Innovators Community
+            </h2>
             <p className="text-gray-600">
-            Connect with a growing network of changemakers shaping the future of healthcare in Africa
+              Connect with a growing network of changemakers shaping the future
+              of healthcare in Africa
             </p>
             <div className="flex flex-col gap-4">
-          <div className="flex items-center justify-start gap-4">
-            <CircleCheck color="#fff" />
-            <div className="w-96 mt-1">
-              <h2 className="font-bold">
-              Ask Questions
-              </h2>
-              <p className="text-white">
-              Get expert advice and insights from experienced professionals.
-              </p>
+              <div className="flex items-center justify-start gap-4">
+                <CircleCheck color="#fff" />
+                <div className="w-96 mt-1">
+                  <h2 className="font-bold">Ask Questions</h2>
+                  <p className="text-white">
+                    Get expert advice and insights from experienced
+                    professionals.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center justify-start gap-4">
+                <CircleCheck color="#fff" />
+                <div className="w-96 mt-1">
+                  <h2 className="font-bold">Share Ideas & Collaborate</h2>
+                  <p className="text-white">
+                    Post your thoughts, discuss challenges, and crowdsource
+                    solutions.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center justify-start gap-4">
+                <CircleCheck color="#fff" />
+                <div className="w-96 mt-1">
+                  <h2 className="font-bold">Receive Feedback & Support</h2>
+                  <p className="text-white">
+                    Strengthen your innovation by learning from peers and
+                    industry leaders.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="flex items-center justify-start gap-4">
-            <CircleCheck color="#fff" />
-            <div className="w-96 mt-1">
-              <h2 className="font-bold">
-              Share Ideas & Collaborate
-              </h2>
-              <p className="text-white">
-              Post your thoughts, discuss challenges, and crowdsource solutions.
-              </p>
-            </div>
-          </div>
-          <div className="flex items-center justify-start gap-4">
-            <CircleCheck color="#fff" />
-            <div className="w-96 mt-1">
-              <h2 className="font-bold">
-              Receive Feedback & Support
-              </h2>
-              <p className="text-white">
-              Strengthen your innovation by learning from peers and industry leaders.
-              </p>
-            </div>
-          </div>
-        </div>
           </div>
         </div>
       </div>

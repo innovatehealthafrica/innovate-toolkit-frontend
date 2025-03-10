@@ -5,7 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import img5 from "../../../../public/ideas for PMs.png"
+import img5 from "@/public/ideas for PMs.png";
 import Image from "next/image";
 
 export default function Faq() {
@@ -85,11 +85,17 @@ export default function Faq() {
             Your journey to transforming healthcare in Africa starts here!
           </p>
           <button className="mt-12  text-white px-4 py-1 sm:mr-16 rounded-full bg-[#8AA15B] hover:bg-gray-100 hover:text-[#8AA15B] hover:border-2 hover:border-[#8AA15B] transition">
-          Sign Up Now
+            Sign Up Now
           </button>
         </div>
         <div className="flex justify-end">
-          <Image src={img5} alt="Ideas" width={540} height={600} className="h-auto" />
+          <Image
+            src={img5}
+            alt="Ideas"
+            width={540}
+            height={600}
+            className="h-auto"
+          />
         </div>
       </div>
     </section>
