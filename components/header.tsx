@@ -16,6 +16,12 @@ export default function Header() {
   if (pathname === "/component/community") {
     return null;
   }
+  if (pathname === "/sign-up") {
+    return null;
+  }
+  if (pathname === "/log-in") {
+    return null;
+  }
 
   const navLinks = [
     { name: "Home", path: "/" },
@@ -81,7 +87,7 @@ export default function Header() {
             ))}
           </ul>
           <div className="mt-4 flex justify-center">
-            <Link href="/signup">
+            <Link href="/sign-up">
               <button className="border border-black px-4 py-1 rounded-full bg-[#FFFFFF] hover:bg-gray-100 transition">
                 Sign up
               </button>

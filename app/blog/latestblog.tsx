@@ -149,7 +149,7 @@ export default function LatestBlog() {
           <button
             key={option.value}
             onClick={() => handleFilterClick(option.value)}
-            className={`px-4 py-2 rounded-full ${
+            className={`px-4 py-1 rounded-full border border-gray shadow-md ${
               activeFilter === option.value
                 ? "bg-[#8AA15B] text-white"
                 : option.label === "All"

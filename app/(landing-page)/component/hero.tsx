@@ -128,11 +128,11 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center flex-col md:flex-row gap-2 sm:gap-4 mt-12">
+      <div className="flex items-center justify-center flex-col md:flex-row gap-2 sm:gap-4 sm:mt-4 md:mt-4 mt-2 sm:mx-2">
         {data.map((item, index) => (
           <div
             key={index}
-            className="bg-gradient-to-b from-[#FBE8D0] to-[#FFFFFF] w-72 h-60 rounded-md p-4 mt-4 sm:p-4 sm:mt-20 shadow-md"
+            className="bg-gradient-to-b from-[#FBE8D0] to-[#FFFFFF] w-72 h-60 rounded-md p-4 mt-4 sm:p-4 shadow-md"
           >
             <div className="flex items-center justify-center flex-col space-x-2 sm:space-x-6">
               <Image

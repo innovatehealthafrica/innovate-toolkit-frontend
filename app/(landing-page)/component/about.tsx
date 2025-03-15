@@ -23,7 +23,7 @@ export default function About() {
   ];
   return (
     <section id="about-us" className="text-white">
-      <div className="max-w-screen-2xl mx-auto bg-[#7A955A] pb-8 h-auto scroll-smooth">
+      <div className="max-w-screen-2xl mx-auto bg-[#7A955A] pb-8 h-auto scroll-smooth sm:mt-32">
         {/* <div className="relative h-full w-full bg-slate-950">
           <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
         </div> */}
@@ -55,7 +55,7 @@ export default function About() {
             </div>
           ))}
         </div>
-        <hr className="border-[#3250284A] w-[33rem] m-3 h-1 mx-auto bg-[#3250284A] border-0 rounded-sm md:my-10 dark:bg-[#3250284A]" />
+        <hr className="border-[#3250284A] w-full sm:w-[33rem] m-3 h-1 mx-auto bg-[#3250284A] border-0 rounded-sm md:my-10 dark:bg-[#3250284A]" />
         <div className="flex flex-col sm:flex-row mx-auto px-16 gap-10">
           <Image
             src={img4}

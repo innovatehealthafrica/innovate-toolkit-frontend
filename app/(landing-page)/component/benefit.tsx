@@ -20,7 +20,7 @@ export default function Benefit() {
             </button>
           </Link>
         </div>
-        <div className="flex flex-col gap-4 w-1/2">
+        <div className="flex flex-col gap-4 w-1/2 sm:p-5">
           <div className="flex items-center justify-start gap-4">
             <CircleCheck color="#e0ac54" />
             <div>
