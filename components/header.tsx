@@ -57,7 +57,7 @@ export default function Header() {
               </Link>
             )}
           </ul>
-          <Link href="/signup">
+          <Link href="/sign-up">
             <button className="border border-black w-24 px-4 py-1 ml-5 mr-16 rounded-full bg-[#FFFFFF] hover:bg-gray-100 transition">
               Sign up
             </button>

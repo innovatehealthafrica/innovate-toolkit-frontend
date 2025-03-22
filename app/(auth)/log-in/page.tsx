@@ -108,7 +108,7 @@ export default function Login() {
             <p className="text-sm text-gray-600">
               New user?{" "}
               <Link
-                href="/signup"
+                href="/sign-up"
                 className="text-blue-600 font-medium hover:underline"
               >
                 Sign up
