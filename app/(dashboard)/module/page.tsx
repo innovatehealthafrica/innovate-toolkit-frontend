@@ -42,7 +42,7 @@ const modules = [
     height: 132,
   },
 ];
-export default function Module({ userName }: { userName: string }) {
+export default function Module() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const scrollLeft = () => {
@@ -79,12 +79,11 @@ export default function Module({ userName }: { userName: string }) {
             <Bell className="text-gray-700 cursor-pointer border-2 p-1 rounded-full w-8 h-9" />
             <div className="flex items-center gap-2 border-l pl-4">
               <Avatar className="w-8 h-8 bg-gray-300" />
-              <span className="font-semibold text-gray-800">{userName}</span>
+              <span className="font-semibold text-gray-800">Username</span>
             </div>
           </div>
         </div>
         <div className="w-10/12 sm:w-3/4 m-3 mx-auto bg-gradient-to-r from-[#8AA15B] to-[#B6D6A4] h-64 sm:h-52 rounded-xl text-justify p-7 mb-3">
-
           <h1 className="font-extrabold  text-[#F7C148] mb-2">
             Good morning <span className="text-white">Jason!</span>
           </h1>
@@ -218,7 +217,7 @@ export default function Module({ userName }: { userName: string }) {
           Welcome back, Jason Ronald!I’m a chatbot, here to help you navigate
           Toolkit. Click here to ask me any questions
         </p>
-        <Image src={img4} alt="chatbot" width={156} height={156}/>
+        <Image src={img4} alt="chatbot" width={156} height={156} />
       </div>
     </div>
   );
